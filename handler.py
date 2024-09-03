@@ -3,7 +3,7 @@ import boto3
 
 client = boto3.client('dynamodb')
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table('http-crud-tutorial-items')
+table = dynamodb.Table('scraping-auction-items')
 
 def get(event, context):
     statusCode = 200
